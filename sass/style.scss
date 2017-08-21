@@ -1,0 +1,749 @@
+//COLORS
+    //GENERAL COLORS
+    $navColor: #0b0e37;
+    $navLinkColor: #5b9144; 
+    $navLinkColorHover: #71B454; 
+
+    $borderGreen:#5B9144;
+
+    $formControl: #bcc0c4;
+
+    $greenDarken3: #43a047;
+
+    //LOGO COLORS
+    $logoBlue: #004080;
+    $logoGreen: #5B9144;
+
+//PATTERNS
+
+    $pattern1: "../img/downloaded/pattern/crossword.png";
+    $pattern2: "../img/downloaded/pattern/mooning.png";
+    $pattern3: "../img/downloaded/pattern/footer_lodyas.png";
+
+//FONTS 
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
+    $font1:'Montserrat', sans-serif; 
+    $navFont: 'Oswald', sans-serif;
+
+
+
+
+//---------GLOBAL SETTINGS --------------
+
+* {
+    font-family: $font1;
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url($pattern2); 
+    background-repeat: repeat;
+}
+
+
+h4, h3, p, li, form label {
+    text-shadow: 3px 3px 2px rgba(15, 15, 15, 0.8);
+}
+
+
+//--NAVBAR STYLES--
+
+.navbar {
+    background-color: $navColor;
+
+    .navbar-nav .nav-item {
+        &.active {
+            // background: rgba(82,124,158,0.5);
+            // border-radius: 15px;
+            // box-shadow: 0px 0px 5px 5px rgba(82,124,158,0.5);;
+            a {
+                color: white;
+            }
+        }
+        a  {
+            color: $navLinkColor;
+            font-family: $navFont;           
+            font-size: 20px;
+            margin-left: 7px;
+            margin-right: 7px;
+            &:hover {
+                color: $navLinkColorHover;
+            }
+        }
+    }
+    .navbar-toggler {
+        cursor: pointer;
+        .navbar-toggler-icon {
+            color: $greenDarken3;
+        }
+    }
+
+    img {
+        height: 80px;
+        padding: 3px 0 3px 20px; ;
+    }
+
+}
+ 
+@media (max-width: 576px) {
+    .navbar {
+        padding-top: 6px;
+        padding-bottom: 4px;
+        img {
+            height: 50px;
+            padding: 0 0 0 5px; ;
+        }
+    } 
+    .navbar-toggler{
+        padding-top: 22px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .navbar-toggler{
+        padding-top: 35px;
+        padding-right: 25px;
+    }
+    
+}
+
+//Makes the navbar bounce when reaches top of the page
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+  
+
+//INSERTS A Yellow SHADOW
+.shadowed-yellow {
+    box-shadow: inset 1px 0px 100px -11px #A2612C;
+    -webkit-box-shadow: inset 1px 0px 100px -11px #A2612C;
+    -moz-box-shadow: inset 1px 0px 100px -11px #A2612C;
+    -o-box-shadow: inset 1px 0px 100px -11px #A2612C;
+}
+
+//MAKES A LIST BE A DISC
+.disc-list, .disc-list li {
+    list-style-type: disc!important;
+}
+
+//GREEN ICONS
+.fa-phone, .fa-check, .fa-plane, .fa-wrench {
+    color: $greenDarken3;
+}
+
+//STYLING THE DOTTED SCROLLSPY
+
+.dotted-scrollspy {
+    background-color: rgba(11,14,55,0.8);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: 30%;
+    right: auto;
+    left: 0;
+    z-index: 20;
+    opacity: 0;
+    #logo-nav-item {
+        .nav-link {
+            padding: 8px 0 11px 0;
+
+        }
+    }
+    .nav-link {
+        padding: 8px 5px;
+        color: $navLinkColor;
+        text-shadow: 3px 3px 2px rgba(15, 15, 15, 0.4);
+        &:hover {
+            color: $navLinkColorHover;
+        }
+    }
+}
+
+//Displaying the phone number in white for the Safari browser
+.phone-number {
+    color:white!important;
+}
+
+
+//--------------------------INDEX PAGE ----------------------------
+
+//--VIDEO STYLES--
+
+.background-video {
+  position: absolute;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+#pilot-poster {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+@media (max-width: 450px) {
+    #pilot-poster {
+        height: 100%!important;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 451px) {
+    #pilot-poster {
+        height: 100%!important;
+    }
+
+}
+
+.wrapper {
+  overflow: hidden;
+  .view {
+    height: 100vh;
+  }
+}
+
+#index-page-logo {
+    opacity: 0;
+}
+
+#index-menu-buttons-container {
+    .first-col {
+        // background-color: rgba(11,14,55,.7);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .second-col {
+        // background-color: rgba(11,14,55,.7);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        .btn.btn-lg {
+            min-width: 190px!important;
+        }
+    }
+    img {
+        height: auto!important;
+        width: 250px!important;
+
+    }
+}
+
+#why-choose-us-btn {
+    padding: 1rem 2.15rem;
+}
+
+
+@media (min-width: 576px) {
+    #index-menu-buttons-container img[alt="Vx Aviation logo"] {
+        height: auto!important;
+        width: 500px!important;
+    }
+}
+
+
+//-----------FLIGHT SCHOOL PAGE ---------- 
+
+
+// TITLE SECTION
+
+#flight-school-title-section {
+    height: 100%;
+    #pilot-pic {
+        position: absolute;
+        float: right;
+        bottom: -15rem;
+        right: 4rem;
+        height: 35rem;
+        z-index: 2;
+    }
+    #pilot-pic, ul {
+        -webkit-animation-duration: 2.5s;
+        -moz-animation-duration: 2.5s;
+        -ms-animation-duration: 2.5s;
+        -o-animation-duration: 2.5s;
+        animation-duration: 2.5s;
+    }
+    a {
+        text-shadow: none;
+    }
+    .flex-center {
+      color: #fff;
+    }
+}
+
+@media (max-width: 576px) {
+    #flight-school-title-section {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+// END TITLE SECTION
+
+
+
+//COLORED DIVs
+#blue-div {
+    background: url("../img/downloaded/pilot-epaulettes.jpg") center;
+    background-size: cover;
+}
+
+#red-div {
+    background: url("../img/downloaded/airplane-flying.jpg") center;
+    background-size: cover;
+}
+
+#green-div {
+    background: url("../img/downloaded/cockpit2.jpg") center;
+    background-size: cover;
+}
+
+.div-overlay {
+    position: relative;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(11,14,55,0.3);
+    height: 100%;
+    padding: 70px 0;
+}
+
+@media (min-width: 576px) {
+    .div-overlay {
+        padding: 130px 0;
+    }
+}
+
+//END COLORED DIVS SECTION
+
+
+// FIRST SECTION
+#flight-school-first-section {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a3c60+0,0b0e37+100 */
+    background: rgb(58,60,96); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(58,60,96,1) 0%, rgba(11,14,55,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(58,60,96,1) 0%,rgba(11,14,55,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(58,60,96,1) 0%,rgba(11,14,55,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3c60', endColorstr='#0b0e37',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+    border-top: 1px solid $borderGreen;
+    border-bottom: 1px solid $borderGreen;
+    color: white;
+    .container-fluid {
+        background-image: url("../img/downloaded/propeller3.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover;
+    }
+   
+
+    h1 {
+        position: relative;
+        z-index: 3;
+    }
+   
+    
+    #over-pilot-pic {
+        position: relative;
+        z-index: 3;
+    }
+}
+
+
+@media (max-width: 576px) {
+  #pilot-pic-header {
+    right: 0;
+  }
+}
+//END FIRST SECTION
+
+
+
+// SECOND SECTION
+
+#flight-school-second-section {
+    > .container-fluid {
+        background-image: url('../img/downloaded/half-plane-parked.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+        // background-color: rgba(249,249,249,0.8)
+    }
+
+
+    h3, h4 {
+        font-weight: 600;
+        text-shadow: 4px 4px 10px black;
+    }
+
+    ul li {
+        color: black
+    }
+
+}
+//END SECOND SECTION
+
+
+
+//THIRD SECTION
+
+#flight-school-third-section {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a3c60+0,0b0e37+100 */
+    background: rgb(58,60,96); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(58,60,96,1) 0%, rgba(11,14,55,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(58,60,96,1) 0%,rgba(11,14,55,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(58,60,96,1) 0%,rgba(11,14,55,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3c60', endColorstr='#0b0e37',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    border-top: 1px solid $borderGreen;
+    border-bottom: 1px solid $borderGreen;
+    h2 {
+        color: white;
+    }
+    .card-block {
+        padding: 1.2rem;
+        min-height: 218px;
+        button {
+            position: absolute;
+            bottom: 10px;
+            width: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #flight-school-third-section .card-block {
+        min-height: 310px;
+    }
+}
+
+.card p, .card h4 {
+    text-shadow: none;
+}
+    #cards-carousel1, 
+    #cards-carousel2,
+    #cards-carousel3 {
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+        .controls-top {
+            .btn-floating {
+                background-color: $greenDarken3;
+            }
+        }
+
+        .carousel-indicators li {
+            background-color: $greenDarken3;
+        }
+    }
+    
+    #cards-carousel1 .controls-top h3, 
+    #cards-carousel2 .controls-top h3 {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+#sliding-container {
+    background-color: rgba(249,249,249,0.3);
+}
+
+
+// END THIRD SECTION
+
+
+//FOURTH SECTION
+#flight-school-fourth-section {
+    margin-top: 6.7rem;
+    
+    .col-md-5 {
+
+    }
+}
+
+@media (max-width: 576px ){
+    #flight-school-fourth-section {        
+        .col-md-5 {
+            padding-top: 2rem;
+        }
+    }
+}
+//END FOURTH SECTION
+
+
+//FIFTH SECTION
+
+#flight-school-fifth-section {
+    .container-fluid {
+        h4, p {
+            color: white;
+        }
+    }
+    .form-col1 {
+        border-radius: 20px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#32354c+0,0b0e37+100&0.7+0,0.71+100 */
+        background: -moz-linear-gradient(45deg, rgba(50,53,76,0.7) 0%, rgba(11,14,55,0.71) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, rgba(50,53,76,0.7) 0%,rgba(11,14,55,0.71) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, rgba(50,53,76,0.7) 0%,rgba(11,14,55,0.71) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b332354c', endColorstr='#b50b0e37',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    }
+    .form-col2 {
+        border-radius: 20px;
+        // border: 2px solid white;
+        // box-shadow: 0 0 5px 5px rgba(200, 200, 200, 0.5)
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#32354c+0,0b0e37+100&1+0,0.78+20,0.78+68,1+100 */
+        background: -moz-linear-gradient(-45deg, rgba(50,53,76,1) 0%, rgba(42,45,72,0.78) 20%, rgba(23,26,62,0.78) 68%, rgba(11,14,55,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(50,53,76,1) 0%,rgba(42,45,72,0.78) 20%,rgba(23,26,62,0.78) 68%,rgba(11,14,55,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(50,53,76,1) 0%,rgba(42,45,72,0.78) 20%,rgba(23,26,62,0.78) 68%,rgba(11,14,55,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32354c', endColorstr='#0b0e37',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+
+    form {
+        .form-control {
+            margin-bottom: 0;
+            margin-top: 0;
+            color: $formControl;
+            &:focus {
+                border-color: white;
+            }
+        } 
+        .form-group {
+            margin-bottom: 5px;
+            label {
+                color: $formControl;
+            }
+        }
+        p {
+            color:rgb(117, 117, 117);
+            margin-bottom: 5px;
+        }
+        //changing the color of the checkbox when clicked
+        [type=checkbox].filled-in:checked+label:after {
+            background-color: $logoGreen;
+        }
+    }
+}
+
+@media (max-width: 768px ){
+    #flight-school-fifth-section {
+        .form-col1, .form-col2 {
+            border-radius: 0;
+        }
+    }
+}
+//END FIFTH SECTION
+
+
+
+//--MODAL STYLING
+.modal {
+    .modal-header {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0b0e37+0,45475e+100,3a3c60+100 */
+        background: rgb(11,14,55); /* Old browsers */
+        background: -moz-linear-gradient(45deg, rgba(11,14,55,1) 0%, rgba(69,71,94,1) 100%, rgba(58,60,96,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, rgba(11,14,55,1) 0%,rgba(69,71,94,1) 100%,rgba(58,60,96,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, rgba(11,14,55,1) 0%,rgba(69,71,94,1) 100%,rgba(58,60,96,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b0e37', endColorstr='#3a3c60',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        text-shadow: 3px 3px 6px rgba(33, 33, 33, 1);
+    }
+
+
+    .modal-body {
+        background: url($pattern1);
+        background-repeat: repeat;
+        .tab-content {
+            padding: 0;
+        }
+        h3 {
+            text-align: center;
+            text-shadow: 2px 2px 2px rgba(33, 33, 33, 0.3);
+        }
+        p, li { 
+            text-shadow: 1px 1px 2px rgba(33, 33, 33, 0.3);
+        }
+    }
+
+    .modal-footer {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0b0e37+0,45475e+100,3a3c60+100 */
+        background: rgb(11,14,55); /* Old browsers */
+        background: -moz-linear-gradient(45deg, rgba(11,14,55,1) 0%, rgba(69,71,94,1) 100%, rgba(58,60,96,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, rgba(11,14,55,1) 0%,rgba(69,71,94,1) 100%,rgba(58,60,96,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, rgba(11,14,55,1) 0%,rgba(69,71,94,1) 100%,rgba(58,60,96,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b0e37', endColorstr='#3a3c60',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        text-shadow: 3px 3px 6px rgba(33, 33, 33, 1);
+    }
+    
+}
+
+//END MODAL STYLING
+
+// --------------------------- MAINTANANCE PAGE --------------------------
+
+#maintenance-title-section {
+    height: 55vh;
+}
+
+#maintenance-first-section {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a3c60+0,0b0e37+100 */
+    background: rgb(58,60,96); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(58,60,96,1) 0%, rgba(11,14,55,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(58,60,96,1) 0%,rgba(11,14,55,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(58,60,96,1) 0%,rgba(11,14,55,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3c60', endColorstr='#0b0e37',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    border-top: 1px solid $borderGreen;
+    .container-fluid {
+        background-image: url("../img/downloaded/mechanic2.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: cover;  
+    }
+    .phone-background {
+         border-radius: 20px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#32354c+0,0b0e37+100&0.7+0,0.71+100 */
+        background: -moz-linear-gradient(45deg, rgba(50,53,76,0.7) 0%, rgba(11,14,55,0.71) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, rgba(50,53,76,0.7) 0%,rgba(11,14,55,0.71) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, rgba(50,53,76,0.7) 0%,rgba(11,14,55,0.71) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b332354c', endColorstr='#b50b0e37',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    }
+}
+
+@media (max-width: 576px) {
+    #maintenance-title-section {
+         h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+
+
+//-----------------AIRPLANES FOR SALE PAGE ------------------------
+
+#no-listings-message {
+    * {
+        text-shadow: none;
+    }
+
+    h3 {
+        font-weight: bold;
+    }
+
+    img {
+        -webkit-animation-duration: 1.5s;
+        -moz-animation-duration: 1.5s;
+        -ms-animation-duration: 1.5s;
+        -o-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        -webkit-animation-timing-function: ease-out;
+        -moz-animation-timing-function: ease-out;
+        -ms-animation-timing-function: ease-out;
+        -o-animation-timing-function: ease-out;
+
+    }
+}
+
+
+
+
+
+/*--Footer styling--*/
+footer {
+    &.page-footer {
+        border-top: 1px solid $borderGreen;
+        background-color: $navColor;
+        img[alt="Vx Aviation logo"] {
+            height: 110px;
+        }
+
+        * {
+            font-family: $navFont;
+        }
+
+        li a {
+            color: $navLinkColor;
+            &:hover {
+                color: $navLinkColorHover;
+            }
+        }
+
+        p {
+            font-size: 28px;
+        }
+
+        hr {
+            background-color: white;
+            margin: 3px 0;
+        }
+
+        #footer-copyright * {
+            font-family: $font1;
+            font-size: 16px;
+        }
+    }
+    img[alt="AB logo"] {
+        height: 20px;
+        width: 20px;
+    }
+
+}
+
+@media (max-width: 576px) {
+  #training-heading {
+    font-size: 60px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  #training-heading {
+    font-size: 60px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #training-heading {
+    font-size: 70px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  #training-heading {
+    font-size: 80px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #training-heading {
+    font-size: 110px;
+  }
+}
+
+
