@@ -6,4 +6,4 @@ My Role in the Project:
 Sole designer and developer from conceptualization to execution. The development of this project was rather fast and enjoyable because of how comfortable I was feeling working with the Bootstrap framework at this point.
 
 Technologies Used:
-• HTML • CSS • Sass • Bootstrap • Jquery • AJAX • JavaScript • PHP
+• HTML • CSS • Sass • Bootstrap • Jquery • JavaScript • PHP
