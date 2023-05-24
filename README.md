@@ -107,7 +107,7 @@ npm run preview
 
 <blockquote>Typescript</blockquote>
 
-<h3>CSS Frameworks/Libraries</h3>
+<h3>CSS Frameworks/Libraries/Pre-Processors</h3>
 
 <blockquote>
 SCSS
