@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 
-import flightSchoolVideo from '../../assets/video/flight-school-video.mp4';
-import flightSchoolPoster from '../../assets/video/flight-school-poster.jpg'
+import flightSchoolVideo from '../../../assets/video/flight-school-video.mp4';
+import flightSchoolPoster from '../../../assets/video/flight-school-poster.jpg'
 
 function BackgroundVideo() {
     const videoRef = useRef<null | HTMLVideoElement>(null);
