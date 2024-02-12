@@ -19,7 +19,7 @@ function BackgroundVideo() {
             <video
                 poster={flightSchoolPoster}
                 ref={videoRef}
-                className='object-cover w-full h-full fixed top-0 left-0 z-0'
+                className='object-cover w-full h-full absolute top-0 left-0 z-0'
                 autoPlay
                 muted
                 loop
