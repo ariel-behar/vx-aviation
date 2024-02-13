@@ -1,5 +1,5 @@
 import { RouterProvider } from 'react-router-dom'
-import { ThemeProvider } from "@material-tailwind/react";
+import { ThemeProvider } from '@material-tailwind/react/context/theme'
 
 import './App.scss'
 
