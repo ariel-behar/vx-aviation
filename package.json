@@ -16,12 +16,14 @@
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
     "react-router-dom": "^6.22.0",
+    "react-router-hash-link": "^2.4.3",
     "tailwind-merge": "^2.2.1",
     "uniqid": "^5.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.19",
+    "@types/react-router-hash-link": "^2.4.9",
     "@types/uniqid": "^5.3.4",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
