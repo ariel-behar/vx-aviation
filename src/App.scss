@@ -8,4 +8,22 @@
     body {
         font-family: 'Montserrat', sans-serif;
     }
+
+    .custom-pulse-animation {
+        animation: custom-pulse-animation 2s infinite ease-in-out;
+    }
+
+    @keyframes custom-pulse-animation {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.05);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
 }
