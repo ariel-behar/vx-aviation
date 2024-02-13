@@ -7,6 +7,7 @@ function FlightSchoolView() {
 		<>
 			<HeroSection />
 			<ImagesSection />
+			<WhoWeAreSection />
 		</>
 	)
 }
