@@ -1,5 +1,9 @@
 import { lazy } from 'react';
-import HomeViewMenu from '../components/ViewSpecificComponents/HomeView/HomeViewMenu';
+
+import vxAviationLogoWithTitleEffects from '../assets/img/logos/vx-aviation-logo-with-title-effects.png'
+
+import HomeViewButtons from '../components/ViewSpecificComponents/HomeView/HomeViewButtons';
+import HomeViewPhoneNumber from '../components/ViewSpecificComponents/HomeView/HomeViewPhoneNumber';
 
 const LazyBackgroundVideo = lazy(() => import('../components/ViewSpecificComponents/HomeView/BackgroundVideo'));
 
@@ -7,12 +11,16 @@ function HomeView() {
 	return (
 		<div className="relative h-screen w-screen">
 			{/* Mask */}
-			<div className='bg-black/30 absolute top-0 left-0 h-full w-full z-[1]'></div>
+			<div className='bg-black/50 absolute top-0 left-0 h-full w-full z-[1]'></div>
 			<LazyBackgroundVideo />
 
 			<section className='container mx-auto h-screen w-screen relative'>
-				<div className='z-2 absolute top-[50%] right-[50%] lg:right-[200px] translate-y-[-50%] translate-x-[50%] lg:translate-x-0'>
-					<HomeViewMenu />
+				<div className='z-[2] relative flex flex-col justify-center items-center h-full lg:h-auto lg:block lg:top-[50%] lg:absolute lg:right-[100px] lg:translate-y-[-50%] lg:translate-x-0'>
+					<img className="mx-auto rounded-2xl p-3" src={vxAviationLogoWithTitleEffects} alt="VX Aviation Logo with Title" />
+
+					<HomeViewButtons />
+
+					<HomeViewPhoneNumber />
 				</div>
 			</section>
 		</div>
