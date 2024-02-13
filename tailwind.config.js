@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin');
 const withMT = require("@material-tailwind/react/utils/withMT");
 /** @type {import('tailwindcss').Config} */
 
@@ -19,8 +20,23 @@ export default withMT({
 				font1: ["Montserrat", "sans-serif"],
 				font2: ["Oswald", "sans-serif"],
 			},
+			fontSize: {
+				base: "18px",
+			}
 		},
 	},
-	plugins: [],
+	plugins: [
+		plugin(function({addBase, theme}) {
+			addBase({
+				"html": {fontSize: theme("fontSize.base")},
+				"header": {fontFamily: theme("fontFamily.font2")},
+				"body": {fontFamily: theme("fontFamily.font1")},
+				"button": {fontFamily: theme("fontFamily.font1")},
+				"input": {fontFamily: theme("fontFamily.font1")},
+				"textarea": {fontFamily: theme("fontFamily.font1")},
+				"select": {fontFamily: theme("fontFamily.font1")},
+			})
+		})
+	],
 })
 
