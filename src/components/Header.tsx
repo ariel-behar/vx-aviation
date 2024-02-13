@@ -71,10 +71,9 @@ export function Header() {
         </ul>
     )
 
-
     return (
         <header className="max-h-[768px] w-screen] shadow-2xl">
-            <Navbar className="sticky border-none bg-opacity-100 top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-tertiary ">
+            <Navbar className="sticky border-none bg-opacity-100 top-0 z-50 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-tertiary ">
                 <div className="container mx-auto px-2">
                     <div className="flex items-center justify-between">
                         <NavLink to="/">
