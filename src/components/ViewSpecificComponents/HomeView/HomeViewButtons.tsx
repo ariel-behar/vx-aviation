@@ -26,7 +26,7 @@ function HomeViewButtons() {
                 {
                     navItems.map((navItem) => (
                         <Link to={navItem.path} key={uniqid()}>
-                            <Button className='bg-primary rounded-full px-12 py-3 max-w-[190px] font-thin drop-shadow-lg ' size='lg' variant='filled' placeholder={navItem.title}>
+                            <Button className='bg-primary rounded-full px-12 py-3 max-w-[190px] font-thin drop-shadow-lg ' size='lg' variant='filled'>
                                 {navItem.title}
                             </Button>
                         </Link>
