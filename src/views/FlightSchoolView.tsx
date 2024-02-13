@@ -1,8 +1,11 @@
+import HeroSection from "../components/ViewSpecificComponents/FlightSchoolView/HeroSection"
 
 function FlightSchoolView() {
-  return (
-    <div>FlightSchool</div>
-  )
+	return (
+		<>
+			<HeroSection />
+		</>
+	)
 }
 
 export default FlightSchoolView
