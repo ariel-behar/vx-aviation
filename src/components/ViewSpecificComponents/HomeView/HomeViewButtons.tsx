@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import uniqid from 'uniqid'
 
 import { Button } from '@material-tailwind/react/components/Button';
@@ -12,7 +13,7 @@ const navItems = [
         title: 'Maintenance\n& Services'
     },
     {
-        path: '/for-sale',
+        path: '/airplanes-for-sale',
         title: 'Airplanes\nfor Sale'
     }
 ]
@@ -23,10 +24,12 @@ function HomeViewButtons() {
         <>
             <div className='mt-7 lg:space-x-3 text-center space-y-2 lg:space-y-0 flex flex-col lg:flex-row'>
                 {
-                    navItems.map((item) => (
-                        <Button className='bg-primary rounded-full px-12 py-3 max-w-[190px] font-thin drop-shadow-lg ' size='lg' variant='filled' key={uniqid()} placeholder={item.title}>
-                            {item.title}
-                        </Button>
+                    navItems.map((navItem) => (
+                        <Link to={navItem.path} key={uniqid()}>
+                            <Button className='bg-primary rounded-full px-12 py-3 max-w-[190px] font-thin drop-shadow-lg ' size='lg' variant='filled' placeholder={navItem.title}>
+                                {navItem.title}
+                            </Button>
+                        </Link>
                     ))
                 }
             </div>
