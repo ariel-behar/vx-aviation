@@ -1,12 +1,18 @@
-import { Outlet, ScrollRestoration } from "react-router-dom";
+import { Outlet, ScrollRestoration, useLocation } from "react-router-dom";
+import { Header } from "../components/Header";
 
 function RootView() {
-  return (
-    <>
-        <ScrollRestoration />
-        <Outlet />
-    </>
-  )
+	let location = useLocation();
+
+	return (
+		<>
+			<ScrollRestoration />
+
+			{location.pathname !== '/' && <Header />}
+
+			<Outlet />
+		</>
+	)
 }
 
 export default RootView
