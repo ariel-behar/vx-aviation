@@ -29,6 +29,9 @@
     h6 {
         @apply text-base;
     }
+    p, li {
+        @apply text-lg;
+    }
 
     .custom-pulse-animation {
         animation: custom-pulse-animation 2s infinite ease-in-out;
