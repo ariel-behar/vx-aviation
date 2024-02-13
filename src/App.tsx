@@ -1,4 +1,5 @@
 import { RouterProvider } from 'react-router-dom'
+import { ThemeProvider } from "@material-tailwind/react";
 
 import './App.scss'
 
@@ -8,7 +9,9 @@ function App() {
 
 	return (
 		<>
-			<RouterProvider router={router}/>
+			<ThemeProvider>
+				<RouterProvider router={router} />
+			</ThemeProvider>
 		</>
 	)
 }
