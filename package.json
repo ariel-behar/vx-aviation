@@ -21,6 +21,7 @@
     "uniqid": "^5.4.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.19",
     "@types/react-router-hash-link": "^2.4.9",
