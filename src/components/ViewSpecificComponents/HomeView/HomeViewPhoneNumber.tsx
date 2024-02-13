@@ -1,10 +1,9 @@
-import PhoneIcon from '../../Icons/PhoneIcon'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function HomeViewPhoneNumber() {
 	return (
 		<div className='mt-10 mx-auto flex flex-row justify-center items-center custom-pulse-animation'>
-			<PhoneIcon className="h-12 w-12" fillColor='#2E7D32' strokeColor='#2E7D32' strokeWidth={0.2} />
-
+			<FontAwesomeIcon icon="phone" color="#2E7D32" size="3x" className='mr-2'/>
 			<p className='text-3xl text-white'>+1 (111) 222-3334</p>
 		</div>
 	)
