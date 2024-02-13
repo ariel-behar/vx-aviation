@@ -72,12 +72,12 @@ export function Header() {
     )
 
     return (
-        <header className="max-h-[768px] w-screen] shadow-2xl">
-            <Navbar className="sticky border-none bg-opacity-100 top-0 z-50 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-tertiary ">
+        <header className="w-screen shadow-2xl fixed top-0 z-50 bg-tertiary">
+            <Navbar blurred={false} variant="filled" className="border-none top-0 h-max max-w-full rounded-none px-4 lg:px-8 bg-transparent">
                 <div className="container mx-auto px-2">
                     <div className="flex items-center justify-between">
                         <NavLink to="/">
-                            <img className="max-h-[50px] lg:max-h-[80px] w-auto" src={vxAviationLogo} alt="VX Aviation logo" />
+                            <img className="max-h-[50px] lg:max-h-[70px] w-auto" src={vxAviationLogo} alt="VX Aviation logo" />
                         </NavLink >
                         <div className="flex items-center gap-4">
                             <div className="mr-4 hidden lg:block">
