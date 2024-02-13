@@ -10,11 +10,11 @@ function HeroSection() {
         <section className='relative h-screen bg-no-repeat bg-cover bg-top lg:bg-fixed' style={{backgroundImage: `url(${pilotGear})`}}>
             <div className='bg-black/60 absolute  top-0 left-0 h-screen w-full z-[1] flex justify-center items-center'>
                 <div className='text-center'>
-                    <h1 className='text-white text-3xl lg:text-7xl'>WELCOME TO V<sub>x</sub> AVIATION</h1>
-                    <h2 className='text-white text-xl lg:text-4xl mt-5'>Flight school lessons all over Tampa Bay</h2>
+                    <h1 className='text-white'>WELCOME TO V<sub>x</sub> AVIATION</h1>
+                    <h2 className='text-white mt-5'>Flight school lessons all over Tampa Bay</h2>
 
                     <HashLink to="/flight-school#who-we-are-section">
-                        <Button size='lg' className='uppercase bg-primary text-white rounded-none mt-10'>Begin tour</Button>
+                        <Button size='lg' className='uppercase bg-primary text-white rounded-md mt-10 font-thin'>Begin tour</Button>
                     </HashLink>
                 </div>
             </div>
