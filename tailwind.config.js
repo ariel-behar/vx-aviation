@@ -13,7 +13,12 @@ export default withMT({
 			colors: {
 				primary: "#2E7D32",
 				secondary: "#004080",
-			}
+				tertiary: "#0B0E37"
+			},
+			fontFamily: {
+				font1: ["Montserrat", "sans-serif"],
+				font2: ["Oswald", "sans-serif"],
+			},
 		},
 	},
 	plugins: [],
