@@ -48,7 +48,7 @@ export function Header() {
     }, []);
 
     const navList = (
-        <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 font-font2 text-xl uppercase">
+        <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-xl uppercase">
             {
                 routes.map(({ path, title }: Route, index) => {
                     if (index !== 0) {
