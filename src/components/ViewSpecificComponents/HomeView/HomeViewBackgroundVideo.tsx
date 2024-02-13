@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 
 import flightSchoolVideo from '../../../assets/video/flight-school-video.mp4';
-import flightSchoolPoster from '../../../assets/video/flight-school-poster.jpg'
+import pilotPoster from '../../../assets/img/pilot-poster.jpg'
 
-function BackgroundVideo() {
+function HomeViewBackgroundVideo() {
     const videoRef = useRef<null | HTMLVideoElement>(null);
 
     const handlePlay = () => {
@@ -17,7 +17,7 @@ function BackgroundVideo() {
             <button className='hidden' onClick={handlePlay}>Play Video</button>
 
             <video
-                poster={flightSchoolPoster}
+                poster={pilotPoster}
                 ref={videoRef}
                 className='object-cover w-full h-full absolute top-0 left-0 z-0'
                 autoPlay
@@ -32,4 +32,4 @@ function BackgroundVideo() {
     )
 }
 
-export default BackgroundVideo
+export default HomeViewBackgroundVideo

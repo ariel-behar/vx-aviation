@@ -5,7 +5,7 @@ import vxAviationLogoWithTitleEffects from '../assets/img/logos/vx-aviation-logo
 import HomeViewButtons from '../components/ViewSpecificComponents/HomeView/HomeViewButtons';
 import HomeViewPhoneNumber from '../components/ViewSpecificComponents/HomeView/HomeViewPhoneNumber';
 
-const LazyBackgroundVideo = lazy(() => import('../components/ViewSpecificComponents/HomeView/BackgroundVideo'));
+const LazyBackgroundVideo = lazy(() => import('../components/ViewSpecificComponents/HomeView/HomeViewBackgroundVideo'));
 
 function HomeView() {
 	return (
