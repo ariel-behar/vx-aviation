@@ -1,3 +1,4 @@
+import ContactSection from "../components/ViewSpecificComponents/FlightSchoolView/ContactSection"
 import CoursesSection from "../components/ViewSpecificComponents/FlightSchoolView/CoursesSection"
 import HeroSection from "../components/ViewSpecificComponents/FlightSchoolView/HeroSection"
 import ImagesSection from "../components/ViewSpecificComponents/FlightSchoolView/ImagesSection"
@@ -20,6 +21,7 @@ function FlightSchoolView() {
 				<WhyChooseUsSection />
 			</div>
 
+			<ContactSection /> 
 		</>
 	)
 }
