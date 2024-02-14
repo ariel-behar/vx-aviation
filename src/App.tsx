@@ -7,7 +7,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 import './App.scss'
 
-import router from './router/routes'
+import router from './router/router'
 
 import Loader from './components/Loader'
 
