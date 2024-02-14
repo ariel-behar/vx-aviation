@@ -1,96 +1,95 @@
 [
-    {
-        "id": 1,
-        "courseName": "Commercial Rating",
-        "imagesFolder": "commercial-rating",
-        "courseImages": ["commercial-rating-1.jpg", "commercial-rating-2.jpg", "commercial-rating-3.jpg", "commercial-rating-4.jpg"],
-        "bookImage": "commercial-rating-book",
-        "headline": "There has never been a better time to become a commercial pilot. Jump on our program today and accelerate your future for tomorrow.",
-        "overview": ["The commercial rating is one that takes a little bit of time to achieve. One of the biggest hurdles is the requirement to have 250 hours of total flight time logged. Most applicants find out that once they have completed the hour requirements for their private pilot and Instrument rating, the 250 hour number is much closer than they could dream of. Please see below for a breakdown in hours for this rating."],
-        "requirements": [
-            "250 Hours total time",
-            "100 Hours of pilot in command time of which 50 must be in airplanes",
-            "50 Hours of cross country time (any flight greater than 50 nautical miles)",
-            "20 Hours of dual instruction from a licensed instructor in the commercial areas",
-            "10 hours of instrument training",
-            "10 hours in a complex airplane",
-            "For additional requirements please reference FAR part 61"
-        ]
-    },
-    {
-        "id": 2,
-        "courseName": "Flight Instructor",
-        "imagesFolder": "flight-instructor",
-        "courseImages": ["flight-instructor-1.jpg", "flight-instructor-2.jpg"],
-        "bookImage": "",
-        "headline": "Being an instructor is one of the most rewarding tasks in aviation. No matter where you're at, we can get you there.",
-        "overview": ["Being a flight instructor comes with a huge responsibility in ensuring a positive transfer of knowledge. The flight instructor rating was designed to not only prove that one can fly an airplane to the commercial standards, but also ensure that one possesses the ability to teach. Believe it or not, there really isn't a \"minimum\" number of hours for this rating. This rating is achieved based on a skill set along with the ability to teach one another. This training program is designed to get you flying from the right seat and also teaching people from the lowest level on all aspects of aviation. Being an instructor will allow you to build your hours, stay proficient in all Federal Aviation Regulations, and most importantly, be a role model for other young aviators to follow. Please join us in your career path to success."],
-        "requirements": []
-      },
-      {
-        "id": 3,
-        "courseName": "Pilot Currency Requirements",
-        "imagesFolder": "pilot-currency-requirements",
-        "courseImages": ["pilot-currency-requirements-1.jpg", "pilot-currency-requirements-2"],
-        "bookImage": "",
-        "headline": "Whether your a new pilot or someone that's been flying for 50 years, everybody needs a little bit of re-currency training.",
-        "overview": [
-            "*Bi-Annual Flight Review (BFR). This is a one-on-one flight review between a pilot and an instructor that must be accomplished every 24 calendar months. There is no \"pass/fail\" for this process however depending on how long it's been since your last flight, may determine any need for additional training. Per the regulation this is a 1 hour ground followed by 1 hour in the airplane.",
-            "*Instrument Proficient Check (IPC). As an instrument rated pilot we must maintain the highest degree of proficiency with regard too flying by reference to instruments only. This can be somewhat difficult for the average pilot and therefore we offer a wide range of availability, thus making it easy to obtain the required currency set forth by the FAA.",
-            "*We can not stress the importance of safety. Since the majority of aircraft accidents are caused by \"pilot error\", we would rather take the time to address all of your concerns in a \"one on one\" session than hear about an accident on the news. The only dumb question is the one that didn't get asked. We take things very seriously and therefore want to ensure your success as a pilot. Please don't hesitate to ask us for additional help, as we are always here to assist."
-        ],
-        "requirements": []
-      },
-      {
-        "id": 4,
-        "courseName": "Private Pilot",
-        "imagesFolder": "private-pilot",
-        "courseImages": ["private-pilot-1.jpg", "private-pilot-2.jpg", "private-pilot-3.jpg", "private-pilot-4.jpg" ],
-        "bookImage": "private-pilot-book.jpg",
-        "headline": "Come fly with us and become a private pilot in as little as 40 hours. Join our award winning team in making your dreams come true.",
-        "overview": ["Becoming a Private Pilot is one of the most sought out ratings in the pilot community. This rating will provide you the freedom to take passengers and fly from coast to coast, Key West, or even the Bahamas. Please note that the training required for this rating is catered to you the student. Most people don’t have the ability to fly during regular business hours. We will work around your schedule from start to finish. Please see below for a breakdown in the requirements set forth by the Federal Aviation Administration (FAA)."],
-        "requirements": [
-            "40 Hours of flight training in a single engine aircraft",
-            "20 Hours of instruction with a licensed flight Instructor",
-            "10 Hours of solo flight",
-            "Must pass an FAA written exam",
-            "Must hold a 3rd class medical certificate",
-            "Must be at least 16 years of age to solo, 17 to get a license",
-            "Must be able to read, speak, and write the English language",
-            "HAVE FUN!"
-        ]
-      },
-      {
-        "id": 5,
-        "courseName": "Instrument Rating",
-        "imagesFolder": "instrument-rating",
-        "courseImages": ["instrument-rating-1.jpg", "instrument-rating-2.jpg", "instrument-rating-3.jpg", "instrument-rating-4.jpg"],
-        "bookImage": "instrument-rating-book.jpg",
-        "headline": "Wouldn't it be nice to fly through the clouds and not have a care in the world? Look no farther than our program that specializes in making you a professional.",
-        "overview": ["Becoming a Private Pilot is one of the most sought out ratings in the pilot community. This rating will provide you the freedom to take passengers and fly from coast to coast, Key West, or even the Bahamas. Please note that the training required for this rating is catered to you the student. Most people don’t have the ability to fly during regular business hours to fly. We will work around your schedule from start to finish. Please see below for a breakdown in the requirements set forth by the Federal Aviation Administration (FAA)."],
-        "requirements": [
-            "40 Hours of flight training in a single engine aircraft",
-            "20 Hours of instruction with a licensed flight Instructor",
-            "10 Hours of solo flight",
-            "Must pass an FAA written exam",
-            "Must hold a 3rd class medical certificate",
-            "Must be at least 16 years of age to solo, 17 to get a license",
-            "Must be able to read, speak, and write the English language",
-            "HAVE FUN!"
-        ]
-      },
-      {
-        "id": 6,
-        "courseName": "Multi-Engine Rating",
-        "imagesFolder": "multi-engine-rating",
-        "courseImages": ["multi-engine-rating-1.jpg", "multi-engine-rating-2.jpg", "multi-engine-rating-3.jpg", "multi-engine-rating-4.jpg"],
-        "bookImage": "",
-        "headline": "Sign up for our advanced Multi-Engine rating course and fly faster than you’ve ever gone before.",
-        "overview": ["The Multi-Engine rating is one of the most fun ratings to obtain. There is no written test and most people can get it done in a long weekend. Having a Multi-Engine rating gives you the opportunity to fly with a little more security, a second engine. Believe it or not these aircraft are designed to fly and operate on 1 engine even though they have 2. The training that you will receive is designed to teach specific maneuvers that the FAA has laid out in the Airman Certification Standards (ACS). Most people who apply for this rating either are looking to own a Multi-Engine aircraft or are looking at making flying a profession. Whichever your needs maybe, we are here to help and make it a reality."],
-        "requirements": [
-            "15 Hours of Multi-Engine training",
-            "Pass a check ride with an examiner"
-        ]
-      }
-      
+	{
+		"id": 1,
+		"courseName": "Commercial Rating",
+		"imagesFolder": "commercial-rating",
+		"courseImages": ["commercial-rating-1.jpg", "commercial-rating-2.jpg", "commercial-rating-3.jpg", "commercial-rating-4.jpg"],
+		"bookImage": "commercial-rating-book",
+		"headline": "There has never been a better time to become a commercial pilot. Jump on our program today and accelerate your future for tomorrow.",
+		"overview": ["The commercial rating is one that takes a little bit of time to achieve. One of the biggest hurdles is the requirement to have 250 hours of total flight time logged. Most applicants find out that once they have completed the hour requirements for their private pilot and Instrument rating, the 250 hour number is much closer than they could dream of. Please see below for a breakdown in hours for this rating."],
+		"requirements": [
+			"250 Hours total time",
+			"100 Hours of pilot in command time of which 50 must be in airplanes",
+			"50 Hours of cross country time (any flight greater than 50 nautical miles)",
+			"20 Hours of dual instruction from a licensed instructor in the commercial areas",
+			"10 hours of instrument training",
+			"10 hours in a complex airplane",
+			"For additional requirements please reference FAR part 61"
+		]
+	},
+	{
+		"id": 2,
+		"courseName": "Flight Instructor",
+		"imagesFolder": "flight-instructor",
+		"courseImages": ["flight-instructor-1.jpg", "flight-instructor-2.jpg"],
+		"bookImage": null,
+		"headline": "Being an instructor is one of the most rewarding tasks in aviation. No matter where you're at, we can get you there.",
+		"overview": ["Being a flight instructor comes with a huge responsibility in ensuring a positive transfer of knowledge. The flight instructor rating was designed to not only prove that one can fly an airplane to the commercial standards, but also ensure that one possesses the ability to teach. Believe it or not, there really isn't a \"minimum\" number of hours for this rating. This rating is achieved based on a skill set along with the ability to teach one another. This training program is designed to get you flying from the right seat and also teaching people from the lowest level on all aspects of aviation. Being an instructor will allow you to build your hours, stay proficient in all Federal Aviation Regulations, and most importantly, be a role model for other young aviators to follow. Please join us in your career path to success."],
+		"requirements": null
+	},
+	{
+		"id": 3,
+		"courseName": "Pilot Currency Requirements",
+		"imagesFolder": "pilot-currency-requirements",
+		"courseImages": ["pilot-currency-requirements-1.jpg", "pilot-currency-requirements-2"],
+		"bookImage": null,
+		"headline": "Whether your a new pilot or someone that's been flying for 50 years, everybody needs a little bit of re-currency training.",
+		"overview": [
+			"*Bi-Annual Flight Review (BFR). This is a one-on-one flight review between a pilot and an instructor that must be accomplished every 24 calendar months. There is no \"pass/fail\" for this process however depending on how long it's been since your last flight, may determine any need for additional training. Per the regulation this is a 1 hour ground followed by 1 hour in the airplane.",
+			"*Instrument Proficient Check (IPC). As an instrument rated pilot we must maintain the highest degree of proficiency with regard too flying by reference to instruments only. This can be somewhat difficult for the average pilot and therefore we offer a wide range of availability, thus making it easy to obtain the required currency set forth by the FAA.",
+			"*We can not stress the importance of safety. Since the majority of aircraft accidents are caused by \"pilot error\", we would rather take the time to address all of your concerns in a \"one on one\" session than hear about an accident on the news. The only dumb question is the one that didn't get asked. We take things very seriously and therefore want to ensure your success as a pilot. Please don't hesitate to ask us for additional help, as we are always here to assist."
+		],
+		"requirements": null
+	},
+	{
+		"id": 4,
+		"courseName": "Private Pilot",
+		"imagesFolder": "private-pilot",
+		"courseImages": ["private-pilot-1.jpg", "private-pilot-2.jpg", "private-pilot-3.jpg", "private-pilot-4.jpg"],
+		"bookImage": "private-pilot-book.jpg",
+		"headline": "Come fly with us and become a private pilot in as little as 40 hours. Join our award winning team in making your dreams come true.",
+		"overview": ["Becoming a Private Pilot is one of the most sought out ratings in the pilot community. This rating will provide you the freedom to take passengers and fly from coast to coast, Key West, or even the Bahamas. Please note that the training required for this rating is catered to you the student. Most people don’t have the ability to fly during regular business hours. We will work around your schedule from start to finish. Please see below for a breakdown in the requirements set forth by the Federal Aviation Administration (FAA)."],
+		"requirements": [
+			"40 Hours of flight training in a single engine aircraft",
+			"20 Hours of instruction with a licensed flight Instructor",
+			"10 Hours of solo flight",
+			"Must pass an FAA written exam",
+			"Must hold a 3rd class medical certificate",
+			"Must be at least 16 years of age to solo, 17 to get a license",
+			"Must be able to read, speak, and write the English language",
+			"HAVE FUN!"
+		]
+	},
+	{
+		"id": 5,
+		"courseName": "Instrument Rating",
+		"imagesFolder": "instrument-rating",
+		"courseImages": ["instrument-rating-1.jpg", "instrument-rating-2.jpg", "instrument-rating-3.jpg", "instrument-rating-4.jpg"],
+		"bookImage": "instrument-rating-book.jpg",
+		"headline": "Wouldn't it be nice to fly through the clouds and not have a care in the world? Look no farther than our program that specializes in making you a professional.",
+		"overview": ["Becoming a Private Pilot is one of the most sought out ratings in the pilot community. This rating will provide you the freedom to take passengers and fly from coast to coast, Key West, or even the Bahamas. Please note that the training required for this rating is catered to you the student. Most people don’t have the ability to fly during regular business hours to fly. We will work around your schedule from start to finish. Please see below for a breakdown in the requirements set forth by the Federal Aviation Administration (FAA)."],
+		"requirements": [
+			"40 Hours of flight training in a single engine aircraft",
+			"20 Hours of instruction with a licensed flight Instructor",
+			"10 Hours of solo flight",
+			"Must pass an FAA written exam",
+			"Must hold a 3rd class medical certificate",
+			"Must be at least 16 years of age to solo, 17 to get a license",
+			"Must be able to read, speak, and write the English language",
+			"HAVE FUN!"
+		]
+	},
+	{
+		"id": 6,
+		"courseName": "Multi-Engine Rating",
+		"imagesFolder": "multi-engine-rating",
+		"courseImages": ["multi-engine-rating-1.jpg", "multi-engine-rating-2.jpg", "multi-engine-rating-3.jpg", "multi-engine-rating-4.jpg"],
+		"bookImage": null,
+		"headline": "Sign up for our advanced Multi-Engine rating course and fly faster than you’ve ever gone before.",
+		"overview": ["The Multi-Engine rating is one of the most fun ratings to obtain. There is no written test and most people can get it done in a long weekend. Having a Multi-Engine rating gives you the opportunity to fly with a little more security, a second engine. Believe it or not these aircraft are designed to fly and operate on 1 engine even though they have 2. The training that you will receive is designed to teach specific maneuvers that the FAA has laid out in the Airman Certification Standards (ACS). Most people who apply for this rating either are looking to own a Multi-Engine aircraft or are looking at making flying a profession. Whichever your needs maybe, we are here to help and make it a reality."],
+		"requirements": [
+			"15 Hours of Multi-Engine training",
+			"Pass a check ride with an examiner"
+		]
+	}
 ]
