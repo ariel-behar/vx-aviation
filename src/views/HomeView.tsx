@@ -3,7 +3,7 @@ import { lazy } from 'react';
 import vxAviationLogoWithTitleEffects from '../assets/img/logos/vx-aviation-logo-with-title-effects.png'
 
 import HomeViewButtons from '../components/ViewSpecificComponents/HomeView/HomeViewButtons';
-import HomeViewPhoneNumber from '../components/ViewSpecificComponents/HomeView/HomeViewPhoneNumber';
+import PhoneNumber from '../components/PhoneNumber';
 
 const LazyBackgroundVideo = lazy(() => import('../components/ViewSpecificComponents/HomeView/HomeViewBackgroundVideo'));
 
@@ -20,7 +20,7 @@ function HomeView() {
 
 					<HomeViewButtons />
 
-					<HomeViewPhoneNumber />
+					<PhoneNumber />
 				</div>
 			</section>
 		</div>
