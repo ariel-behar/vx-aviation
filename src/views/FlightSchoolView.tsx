@@ -1,3 +1,4 @@
+import CoursesSection from "../components/ViewSpecificComponents/FlightSchoolView/CoursesSection"
 import HeroSection from "../components/ViewSpecificComponents/FlightSchoolView/HeroSection"
 import ImagesSection from "../components/ViewSpecificComponents/FlightSchoolView/ImagesSection"
 import UpToDateTrainingSection from "../components/ViewSpecificComponents/FlightSchoolView/UpToDateTrainingSection"
@@ -10,6 +11,7 @@ function FlightSchoolView() {
 			<ImagesSection />
 			<WhoWeAreSection />
 			<UpToDateTrainingSection />
+			<CoursesSection />
 			
 		</>
 	)
