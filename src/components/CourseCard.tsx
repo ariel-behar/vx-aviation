@@ -39,7 +39,7 @@ function CourseCard({
                     </p>
                 </div>
                 <div className="p-5 mt-auto">
-                    <Button className="bg-secondary font-font1 font-light w-full text-md" onClick={handleReadMoreBtnClock}>Read More</Button>
+                    <Button className="bg-secondary font-font1 font-light w-full text-md rounded-md" onClick={handleReadMoreBtnClock}>Read More</Button>
                 </div>
             </div>
 
