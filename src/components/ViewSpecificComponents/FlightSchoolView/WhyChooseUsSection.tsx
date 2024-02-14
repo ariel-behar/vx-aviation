@@ -31,10 +31,10 @@ function WhyChooseUsSection() {
                 <div className="col-span-5">
                     <ul>
                         {
-                            reasonsList.map(rating => (
+                            reasonsList.map(reason => (
                                 <li key={uniqid()} className='my-3 text-xl'>
                                     <FontAwesomeIcon icon="check" color="#2E7D32" size="xl" className='mr-3' />
-                                    {rating}
+                                    {reason}
                                 </li>
                             ))
                         }
