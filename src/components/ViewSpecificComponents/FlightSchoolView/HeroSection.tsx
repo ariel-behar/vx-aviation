@@ -1,4 +1,4 @@
-import { HashLink } from 'react-router-hash-link';
+import { Link as ScrollLink } from 'react-scroll'
 
 import pilotGear from '../../../assets/img/pilot-gear.jpg'
 import pilot from '../../../assets/img/pilot.png'
@@ -13,9 +13,9 @@ function HeroSection() {
                     <h1 >WELCOME TO V<sub>x</sub> AVIATION</h1>
                     <h2 className='mt-5'>Flight school lessons all over Tampa Bay</h2>
 
-                    <HashLink to="/flight-school#who-we-are-section">
+                    <ScrollLink className='cursor-pointer' to="who-we-are-section" smooth={true} offset={-100} duration={500}>
                         <Button size='lg' className='uppercase bg-primary rounded-md mt-10 font-thin'>Begin tour</Button>
-                    </HashLink>
+                    </ScrollLink>
                 </div>
             </div>
 
