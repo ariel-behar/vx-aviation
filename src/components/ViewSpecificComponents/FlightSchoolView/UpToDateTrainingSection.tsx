@@ -21,8 +21,8 @@ function UpToDateTrainingSection() {
 					transition: "all 0.8s ease-in-out"
 				}}>
 				<div className='container mx-auto h-full flex flex-col justify-center'>
-					<h3 className='text-4xl font-bold text-white uppercase text-shadow'>Safe and up to date</h3>
-					<h3 className='text-8xl font-bold text-white uppercase text-shadow'>Training</h3>
+					<h3 className='text-4xl font-bold uppercase text-shadow'>Safe and up to date</h3>
+					<h3 className='text-8xl font-bold uppercase text-shadow'>Training</h3>
 				</div>
 			</div>
 		</section>

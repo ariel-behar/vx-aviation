@@ -34,7 +34,7 @@ function CourseCard({
                     <h4 className="text-secondary mb-2">
                         {course.courseName}
                     </h4>
-                    <p>
+                    <p className="text-secondary">
                         {course.headline}
                     </p>
                 </div>

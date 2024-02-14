@@ -18,7 +18,7 @@ function CoursesSection() {
     return (
         <section>
             <div className="py-12 relative">
-                <h3 className="uppercase text-center text-white absolute left-[50px] top-[70px]">Our Courses</h3>
+                <h3 className="uppercase text-center absolute left-[50px] top-[70px]">Our Courses</h3>
                 <Carousel data={courses}/>
             </div>
         </section>

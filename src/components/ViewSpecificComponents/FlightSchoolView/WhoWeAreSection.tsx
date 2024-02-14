@@ -18,7 +18,7 @@ function WhoWeAreSection() {
     return (
         <section className='bg-custom-gradient'>
             <div style={{ backgroundImage: `url(${propeller})` }} className='py-20 px-1 lg:px-4 flex justify-end bg-cover bg-center bg-no-repeat'>
-                <div className='lg:w-3/5 text-white px-5 lg:px-10'>
+                <div className='lg:w-3/5 px-5 lg:px-10'>
                     <h3 className='text-center mb-10'>WHO WE ARE</h3>
 
                     <p className='text-justify text-xl'>We are what you would consider a “one-stop-shop” for all your aviation needs. Our owner is a licensed flight instructor with over 25 years of experience who got his experience by mowing lawns at 14 years old and paying his way forward. Please see the list of ratings currently held.</p>
