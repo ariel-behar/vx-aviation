@@ -15,7 +15,7 @@ function FlightSchoolView() {
 			<ImagesSection />
 			<WhoWeAreSection />
 			<UpToDateTrainingSection />
-			<div className="bg-custom-gradient border-b-1 border-b-primary">
+			<div className="bg-custom-gradient border-primary border-t-[1px] border-b-[1px]">
 				<CoursesSection />
 
 				<hr className="border-primary border-1 w-1/4 mx-auto" />
