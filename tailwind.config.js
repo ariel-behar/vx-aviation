@@ -26,7 +26,7 @@ export default withMT({
 		},
 	},
 	plugins: [
-		plugin(function({addBase, theme}) {
+		plugin(function({addBase, theme, addUtilities}) {
 			addBase({
 				"html": {fontSize: theme("fontSize.base")},
 				"header": {fontFamily: theme("fontFamily.font2")},
@@ -36,6 +36,14 @@ export default withMT({
 				"textarea": {fontFamily: theme("fontFamily.font1")},
 				"select": {fontFamily: theme("fontFamily.font1")},
 			})
+
+			const newUtilities = {
+				".text-shadow": {
+					textShadow: "4px 4px 10px rgba(0, 0, 0, 0.7)"
+				}
+			}
+
+			addUtilities(newUtilities)
 		})
 	],
 })
