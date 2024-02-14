@@ -18,7 +18,7 @@ const reasonsList: Reason[] = [
 
 function WhyChooseUsSection() {
     return (
-        <section className="container mx-auto py-10 px-5">
+        <section id="why-choose-us-section" className="container mx-auto py-10 px-5">
             <h3 className="uppercase text-center mb-10">Why Choose Us</h3>
 
             <div className="grid grid-cols-12 gap-5" >

@@ -4,7 +4,7 @@ import PhoneNumber from '../../PhoneNumber'
 
 function ContactSection() {
 	return (
-		<section style={{ backgroundImage: `url(${airplaneSunset})` }}
+		<section id="contact-section" style={{ backgroundImage: `url(${airplaneSunset})` }}
 			className='py-5 bg-cover bg-custom-inset-shadow'
 		>
 			<div className='lg:w-[82vw] mx-auto grid grid-cols-12'>
