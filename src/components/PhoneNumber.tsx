@@ -10,7 +10,7 @@ function PhoneNumber({
 	size = '2x',
 }: Props) {
 	return (
-		<div className='mt-10 mx-auto flex flex-row justify-center items-center custom-pulse-animation'>
+		<div className='mx-auto flex flex-row justify-center items-center custom-pulse-animation'>
 			<FontAwesomeIcon icon="phone" color="#2E7D32" size={size} className='mr-2'/>
 			<p className='text-3xl'>{phoneNumber}</p>
 		</div>
