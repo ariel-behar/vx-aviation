@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import uniqid from "uniqid";
 
-import vxAviationLogo from '../assets/img/logos/vx-aviation-logo-small.png'
+import vxAviationLogo from '../../assets/img/logos/vx-aviation-logo-small.png'
 
 import IconButton from "@material-tailwind/react/components/IconButton";
 import Navbar from "@material-tailwind/react/components/Navbar";
