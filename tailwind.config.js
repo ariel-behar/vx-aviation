@@ -40,6 +40,9 @@ export default withMT({
 			const newUtilities = {
 				".text-shadow": {
 					textShadow: "4px 4px 10px rgba(0, 0, 0, 0.7)"
+				},
+				".bg-custom-gradient":{
+					background: "linear-gradient(45deg, #3a3c60 0%, #0b0e37 100%)"
 				}
 			}
 

@@ -16,7 +16,7 @@ const ratingsList:Ratings = [
 
 function WhoWeAreSection() {
     return (
-        <section style={{ background: 'linear-gradient(45deg, #3a3c60 0%, #0b0e37 100%)' }}>
+        <section className='bg-custom-gradient'>
             <div style={{ backgroundImage: `url(${propeller})` }} className='p-1 lg:p-4 flex justify-end bg-cover bg-center bg-no-repeat'>
                 <div className='lg:w-3/5 text-white py-5 px-5 lg:px-10'>
                     <h3 className='text-center my-10'>WHO WE ARE</h3>
