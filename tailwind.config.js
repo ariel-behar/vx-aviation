@@ -26,7 +26,7 @@ export default withMT({
 		},
 	},
 	plugins: [
-		plugin(function({addBase, theme, addUtilities}) {
+		plugin(function({addBase, theme, addUtilities, addVariant}) {
 			addBase({
 				"html": {fontSize: theme("fontSize.base")},
 				"header": {fontFamily: theme("fontFamily.font2")},
@@ -43,6 +43,12 @@ export default withMT({
 				},
 				".bg-custom-gradient":{
 					background: "linear-gradient(45deg, #3a3c60 0%, #0b0e37 100%)"
+				},
+				".bg-custom-gradient-opaque":{
+					background: "linear-gradient(45deg, rgba(50,53,76,0.7) 0%, rgba(11,14,55,0.71) 100%)"
+				},
+				".bg-custom-inset-shadow": {
+					boxShadow: "inset 1px 0px 100px -11px #A2612C"
 				}
 			}
 
