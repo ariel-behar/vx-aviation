@@ -1,3 +1,4 @@
+import SideMenu from "../components/SideMenu"
 import ContactSection from "../components/ViewSpecificComponents/FlightSchoolView/ContactSection"
 import CoursesSection from "../components/ViewSpecificComponents/FlightSchoolView/CoursesSection"
 import HeroSection from "../components/ViewSpecificComponents/FlightSchoolView/HeroSection"
@@ -9,6 +10,7 @@ import WhyChooseUsSection from "../components/ViewSpecificComponents/FlightSchoo
 function FlightSchoolView() {
 	return (
 		<>
+			<SideMenu />
 			<HeroSection />
 			<ImagesSection />
 			<WhoWeAreSection />
