@@ -20,7 +20,9 @@ function HomeView() {
 
 					<HomeViewButtons />
 
-					<PhoneNumber />
+					<div className='mt-10'>
+						<PhoneNumber />
+					</div>
 				</div>
 			</section>
 		</div>
