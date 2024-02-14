@@ -26,6 +26,7 @@ export default withMT({
 		},
 	},
 	plugins: [
+		require("@tailwindcss/forms"),
 		plugin(function({addBase, theme, addUtilities, addVariant}) {
 			addBase({
 				"html": {fontSize: theme("fontSize.base")},
