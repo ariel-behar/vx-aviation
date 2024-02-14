@@ -16,8 +16,9 @@ const courses = _courses as ICourse[]
 
 function CoursesSection() {
     return (
-        <section className="bg-custom-gradient">
-            <div className=" py-12">
+        <section>
+            <div className="py-12 relative">
+                <h3 className="uppercase text-center text-white absolute left-[50px] top-[70px]">Our Courses</h3>
                 <Carousel data={courses}/>
             </div>
         </section>
