@@ -12,12 +12,12 @@ function CourseCard({
     ...course
 }: Props) {
     const [, startTransition] = useTransition();
-    const [showModal, setShowModal] = useState(false)
+    const [showModal, setShowModal] = useState(false);
 
-    const handleReadMoreBtnClock = () => {
+    const handleShowModal = () => {
         startTransition(() => {
-            setShowModal(true);
-          });
+            setShowModal(!showModal);
+        });
     }
 
     return (
@@ -39,11 +39,11 @@ function CourseCard({
                     </p>
                 </div>
                 <div className="p-5 mt-auto">
-                    <Button className="bg-secondary font-font1 font-light w-full text-md rounded-md" onClick={handleReadMoreBtnClock}>Read More</Button>
+                    <Button className="bg-secondary font-font1 font-light w-full text-md rounded-md" onClick={handleShowModal}>Read More</Button>
                 </div>
             </div>
 
-            {showModal && <LazyModal {...course} />} 
+            {showModal && <LazyModal {...course} showModal={showModal} handleShowModal={handleShowModal} />}
         </>
     );
 }
