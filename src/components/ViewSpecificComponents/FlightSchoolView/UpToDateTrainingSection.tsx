@@ -8,8 +8,6 @@ function UpToDateTrainingSection() {
 	const textDivRef = useRef(null)
 	const isInView = useInView(textDivRef, { once: true, amount: 1 })
 
-	console.log(isInView);
-
 	return (
 		<section ref={textDivRef} style={{ backgroundImage: `url(${clouds})` }} className='min-h-[320px] bg-no-repeat bg-fixed bg-cover bg-bottom grid relative'>
 			<img src={halfPlaneParked} alt="Flying plane" className='justify-self-end align-self-end ' />
