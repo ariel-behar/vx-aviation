@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import uniqid from "uniqid";
 
 import vxAviationLogo from '../../assets/img/logos/vx-aviation-logo-small.png'
@@ -31,7 +32,7 @@ const routes: Route[] = [
         title: 'Airplanes\nfor Sale'
     },
     {
-        path: '/flight-school#contact',
+        path: '/flight-school#contact-section',
         title: 'Contact'
 
     }
@@ -47,15 +48,21 @@ export function Header() {
         );
     }, []);
 
+    const scrollWithOffset = (el: HTMLElement) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -100; 
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+    }
+
     const navList = (
         <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-xl uppercase">
             {
                 routes.map(({ path, title }: Route, index) => {
-                    if (index !== 0) {
+                    if (index !== 0 && title !== 'Contact') {
                         return (
                             <NavLink
                                 to={path}
-                                className={({ isActive }) => (isActive && path !== '/flight-school#contact' ? 'text-white' : 'text-primary')}
+                                className={({ isActive }) => (isActive && title !== 'Contact' ? 'text-white' : 'text-primary')}
                                 key={uniqid()}
                             >
                                 <li style={{ textShadow: "3px 3px 2px rgba(15,15,15,0.8)" }} className="p-1 font-normal" >
@@ -64,6 +71,16 @@ export function Header() {
 
                                 </li>
                             </NavLink >
+                        )
+                    } else if (title === 'Contact') {
+                        return (
+
+                            <li style={{ textShadow: "3px 3px 2px rgba(15,15,15,0.8)" }} className="p-1 font-normal text-primary" >
+                                <HashLink className='cursor-pointer' to={path} key={uniqid()} scroll={el => scrollWithOffset(el)} >
+                                    {title}
+                                </HashLink>
+
+                            </li>
                         )
                     }
                 })
