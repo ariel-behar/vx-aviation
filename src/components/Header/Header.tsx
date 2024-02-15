@@ -75,8 +75,8 @@ export function Header() {
                     } else if (title === 'Contact') {
                         return (
 
-                            <li style={{ textShadow: "3px 3px 2px rgba(15,15,15,0.8)" }} className="p-1 font-normal text-primary" >
-                                <HashLink className='cursor-pointer' to={path} key={uniqid()} scroll={el => scrollWithOffset(el)} >
+                            <li key={uniqid()} style={{ textShadow: "3px 3px 2px rgba(15,15,15,0.8)" }} className="p-1 font-normal text-primary" >
+                                <HashLink className='cursor-pointer' to={path}  scroll={el => scrollWithOffset(el)} >
                                     {title}
                                 </HashLink>
 
