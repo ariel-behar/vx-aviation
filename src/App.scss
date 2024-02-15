@@ -11,33 +11,15 @@
         box-sizing: border-box;
     }
 
-    [type='text'],
-    input:where(:not([type])),
-    [type='email'],
-    [type='url'],
-    [type='password'],
-    [type='number'],
-    [type='date'],
-    [type='datetime-local'],
-    [type='month'],
-    [type='search'],
-    [type='tel'],
-    [type='time'],
-    [type='week'],
-    [multiple],
-    textarea,
-    select {
-        @apply bg-transparent border-t-0 border-l-0 border-r-0 border-b-red-100 my-1 w-full focus:outline-none focus:ring-0 focus:border-white focus:ring-transparent focus:rounded-md focus:border-t-2 focus:border-l-2 focus:border-r-2 focus:border-b-2;
-    }
-
-    [type='checkbox'],
-    [type='radio'] {
-        @apply rounded-sm bg-transparent focus:outline-transparent focus:ring-0 text-primary my-2;
-    }
-
     html {
         @apply text-white;
         scroll-behavior: smooth;
+    }
+
+    body {
+        &.active-modal {
+            overflow-y: hidden;
+        }
     }
 
     h1 {
@@ -60,6 +42,30 @@
     }
     p, li {
         @apply text-base;
+    }
+
+    [type='text'],
+    input:where(:not([type])),
+    [type='email'],
+    [type='url'],
+    [type='password'],
+    [type='number'],
+    [type='date'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='week'],
+    [multiple],
+    textarea,
+    select {
+        @apply bg-transparent border-t-0 border-l-0 border-r-0 border-b-red-100 my-1 w-full focus:outline-none focus:ring-0 focus:border-white focus:ring-transparent focus:rounded-md focus:border-t-2 focus:border-l-2 focus:border-r-2 focus:border-b-2;
+    }
+
+    [type='checkbox'],
+    [type='radio'] {
+        @apply rounded-sm bg-transparent focus:outline-transparent focus:ring-0 text-primary my-2;
     }
 
     .custom-pulse-animation {
