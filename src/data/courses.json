@@ -4,7 +4,7 @@
 		"courseName": "Commercial Rating",
 		"imagesFolder": "commercial-rating",
 		"courseImages": ["commercial-rating-1.jpg", "commercial-rating-2.jpg", "commercial-rating-3.jpg", "commercial-rating-4.jpg"],
-		"bookImage": "commercial-rating-book",
+		"bookImage": "commercial-rating-book.jpg",
 		"headline": "There has never been a better time to become a commercial pilot. Jump on our program today and accelerate your future for tomorrow.",
 		"overview": ["The commercial rating is one that takes a little bit of time to achieve. One of the biggest hurdles is the requirement to have 250 hours of total flight time logged. Most applicants find out that once they have completed the hour requirements for their private pilot and Instrument rating, the 250 hour number is much closer than they could dream of. Please see below for a breakdown in hours for this rating."],
 		"requirements": [
@@ -31,7 +31,7 @@
 		"id": 3,
 		"courseName": "Pilot Currency Requirements",
 		"imagesFolder": "pilot-currency-requirements",
-		"courseImages": ["pilot-currency-requirements-1.jpg", "pilot-currency-requirements-2"],
+		"courseImages": ["pilot-currency-requirements-1.jpg", "pilot-currency-requirements-2.jpg"],
 		"bookImage": null,
 		"headline": "Whether your a new pilot or someone that's been flying for 50 years, everybody needs a little bit of re-currency training.",
 		"overview": [
