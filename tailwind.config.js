@@ -19,9 +19,6 @@ export default withMT({
 			fontFamily: {
 				font1: ["Montserrat", "sans-serif"],
 				font2: ["Oswald", "sans-serif"],
-			},
-			fontSize: {
-				base: "18px",
 			}
 		},
 	},
