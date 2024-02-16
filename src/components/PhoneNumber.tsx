@@ -12,7 +12,7 @@ function PhoneNumber({
 	return (
 		<div className='mx-auto flex flex-row justify-center items-center custom-pulse-animation'>
 			<FontAwesomeIcon icon="phone" color="#2E7D32" size={size} className='mr-2'/>
-			<p className='text-3xl'>{phoneNumber}</p>
+			<p className='text-xl lg:text-3xl'>{phoneNumber}</p>
 		</div>
 	)
 }
