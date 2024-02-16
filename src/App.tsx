@@ -10,8 +10,9 @@ import './App.scss'
 import router from './router/router'
 
 import Loader from './components/Loader'
+import { CourseModalProvider } from './context/CourseModalContext'
 
-library.add(faPlane, faPhone, faChevronLeft, faChevronRight, faCircle, faCheck, faUser, faPaperPlane, faWrench, faXmark )
+library.add(faPlane, faPhone, faChevronLeft, faChevronRight, faCircle, faCheck, faUser, faPaperPlane, faWrench, faXmark)
 
 function App() {
 
@@ -19,7 +20,9 @@ function App() {
 		<>
 			<ThemeProvider>
 				<Suspense fallback={<Loader />}>
-					<RouterProvider router={router} />
+					<CourseModalProvider>
+						<RouterProvider router={router} />
+					</CourseModalProvider>
 				</Suspense>
 			</ThemeProvider>
 		</>
