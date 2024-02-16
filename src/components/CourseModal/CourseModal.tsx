@@ -6,17 +6,14 @@ import CourseModalBottomContent from "./CourseModalBottomContent";
 import CourseModalFooter from "./CourseModalFooter";
 import CourseModalHeader from "./CourseModalHeader";
 import CourseModalTopContent from "./CourseModalTopContent";
+import { useCourseModalContext } from "../../context/CourseModalContext";
 
-interface Props extends ICourse {
-	showModal: boolean
-	handleShowModal: () => void
-}
+interface Props extends ICourse {}
 
 function CourseModal({
-	showModal,
-	handleShowModal,
 	...course
 }: Props) {
+	const { handleShowModal} = useCourseModalContext()
 
 	useEffect(() => {
 		document.body.classList.add('active-modal')

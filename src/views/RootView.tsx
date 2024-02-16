@@ -7,7 +7,7 @@ const LazyCourseModal = lazy(() => import("../components/CourseModal/CourseModal
 
 function RootView() {
 	let location = useLocation();
-	const { selectedCourse, showModal, handleShowModal } = useCourseModalContext();
+	const { selectedCourse, showModal } = useCourseModalContext();
 
 	return (
 		<>
@@ -19,7 +19,7 @@ function RootView() {
 
 			<Footer />
 
-			{(selectedCourse && showModal) && <LazyCourseModal {...selectedCourse} showModal={showModal} handleShowModal={handleShowModal} />}
+			{(selectedCourse && showModal) && <LazyCourseModal {...selectedCourse} />}
 		</>
 	)
 }
