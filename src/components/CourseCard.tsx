@@ -1,8 +1,7 @@
-import { lazy, useState, useTransition } from "react";
 import getImageUrl from "../utils/getImageUrl";
 
 import { ICourse } from "./ViewSpecificComponents/FlightSchoolView/CoursesSection";
-const LazyModal = lazy(() => import("./Modal"));
+import { useCourseModalContext } from "../context/CourseModalContext";
 
 import Button from "@material-tailwind/react/components/Button";
 
@@ -11,13 +10,11 @@ interface Props extends ICourse { }
 function CourseCard({
     ...course
 }: Props) {
-    const [, startTransition] = useTransition();
-    const [showModal, setShowModal] = useState(false);
+    const { handleShowModal, selectCourseHandler } = useCourseModalContext();
 
-    const handleShowModal = () => {
-        startTransition(() => {
-            setShowModal(!showModal);
-        });
+    const openModalHandler = (course: ICourse) => {
+        selectCourseHandler(course)
+        handleShowModal();
     }
 
     return (
@@ -39,11 +36,9 @@ function CourseCard({
                     </p>
                 </div>
                 <div className="p-5 mt-auto">
-                    <Button className="bg-secondary font-font1 font-light w-full text-md rounded-md" onClick={handleShowModal}>Read More</Button>
+                    <Button className="bg-secondary font-font1 font-light w-full text-md rounded-md" onClick={()=>openModalHandler(course)}>Read More</Button>
                 </div>
             </div>
-
-            {showModal && <LazyModal {...course} showModal={showModal} handleShowModal={handleShowModal} />}
         </>
     );
 }
