@@ -29,7 +29,7 @@ function ImagesSection() {
             {
                 images.map(({ imgSrc, alt }: Image) => (
                     <div className='relative' key={uniqid()}>
-                        <img src={imgSrc} alt={alt} />
+                        <img src={imgSrc} alt={alt} className='mx-auto' />
                         <div className='absolute top-0 left-0 w-full h-full bg-black/30' />
                     </div>
                 ))
