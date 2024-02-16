@@ -23,13 +23,13 @@ function CustomCarousel({
         <MuiCarousel
             className="pt-8 pb-12"
             prevArrow={({ handlePrev }) => (
-                <FontAwesomeIcon icon="chevron-left" onClick={handlePrev} className={`absolute top-[10px] left-[48%] -translate-x-[50%] ${chevronStyles}`} />
+                <FontAwesomeIcon icon="chevron-left" onClick={handlePrev} className={`absolute top-[10px] left-[10%] sm:left-[45%] md:left-[46%] lg:left-[47%] xl:left-[48%] -translate-x-[50%] ${chevronStyles}`} />
             )}
             nextArrow={({ handleNext }) => (
-                <FontAwesomeIcon icon="chevron-right" onClick={handleNext} className={`absolute top-[10px] right-[48%] translate-x-[50%] ${chevronStyles}`} />
+                <FontAwesomeIcon icon="chevron-right" onClick={handleNext} className={`absolute top-[10px] right-[77%] sm:right-[45%] lg:right-[47%] md:right-[46%] xl:right-[48%] translate-x-[50%] ${chevronStyles}`} />
             )}
             navigation={({ setActiveIndex, activeIndex, length }) => (
-                <div className="absolute bottom-4 left-2/4 z-[3] flex -translate-x-2/4 gap-2">
+                <div className="absolute top-4 right-[50px] z-[3] flex  gap-2">
                     {new Array(length).fill("").map((_, i) => (
                         <FontAwesomeIcon
                             icon="circle"
