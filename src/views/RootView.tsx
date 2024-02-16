@@ -17,7 +17,7 @@ function RootView() {
 
 			<Outlet />
 
-			<Footer />
+			{location.pathname !== '/' && <Footer />}
 
 			{(selectedCourse && showModal) && <LazyCourseModal {...selectedCourse} />}
 		</>
