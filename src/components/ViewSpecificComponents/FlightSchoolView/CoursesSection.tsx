@@ -17,7 +17,7 @@ const courses = _courses as ICourse[]
 function CoursesSection() {
     return (
         <section id="courses-section">
-            <div className="py-12 relative">
+            <div className="pt-12 relative">
                 <h3 className="uppercase text-center sm:absolute sm:left-[15px] sm:top-[60px] sm:text-2xl md:text-3xl">Our Courses</h3>
                 <Carousel data={courses}/>
             </div>
