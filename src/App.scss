@@ -16,6 +16,23 @@
         scroll-behavior: smooth;
     }
 
+    ::-webkit-scrollbar {
+        width: 0.7em;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: theme('colors.tertiary')
+    }
+     
+    ::-webkit-scrollbar-thumb {
+        background: theme('colors.primary') ;
+        border-radius: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: theme('colors.green.700');
+    }
+
     body {
         &.active-modal {
             overflow-y: hidden;
