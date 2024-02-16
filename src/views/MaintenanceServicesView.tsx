@@ -23,7 +23,7 @@ const servicesList: Service[] = [
 function MaintenanceServicesView() {
 	return (
 		<>
-			<div className="mt-[10vh] h-[35vh] lg:h-[55vh] bg-no-repeat bg-cover bg-fixed relative" style={{ backgroundImage: `url(${airplaneRepair})` }}>
+			<div className="mt-[5vh] h-[35vh] xl:h-[55vh] bg-no-repeat bg-cover bg-fixed relative" style={{ backgroundImage: `url(${airplaneRepair})` }}>
 				<div className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center'>
 					<h2 className='uppercase text-white text-3xl lg:text-5xl text-center'>Maintenance and Services</h2>
 				</div>
@@ -51,7 +51,7 @@ function MaintenanceServicesView() {
 						</div>
 					</div>
 
-					<div className='py-5 md:w-2/4 mx-auto mt-10 xl:mt-20 bg-custom-gradient-opaque rounded-md'>
+					<div className='py-5 md:w-3/4 lg:w-3/4 xl:w-fit xl:px-5 mx-auto mt-10 xl:mt-20 bg-custom-gradient-opaque rounded-md'>
 						<h5 className='uppercase text-center mb-5 xl:text-3xl'>Call us for any assistance you might need</h5>
 						<PhoneNumber />
 					</div>
