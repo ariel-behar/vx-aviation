@@ -3,7 +3,7 @@ import { Header } from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { useCourseModalContext } from "../context/CourseModalContext";
 import { lazy } from "react";
-const LazyCourseModal = lazy(() => import("../components/CourseModal"));
+const LazyCourseModal = lazy(() => import("../components/CourseModal/CourseModal"));
 
 function RootView() {
 	let location = useLocation();
