@@ -20,7 +20,7 @@ function UpToDateTrainingSection() {
 					opacity: isInView ? 1 : 0,
 					transition: "all 0.8s ease-in-out"
 				}}>
-				<div className='container mx-auto h-full flex flex-col justify-center'>
+				<div className='container pl-5 lg:pl-0 mx-auto h-full flex flex-col justify-center'>
 					<h3 className='text-lg lg:text-4xl font-bold uppercase text-shadow'>Safe and up to date</h3>
 					<h3 className=' text-5xl lg:text-8xl font-bold uppercase text-shadow'>Training</h3>
 				</div>
