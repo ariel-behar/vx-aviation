@@ -12,22 +12,25 @@ import router from './router/router'
 
 import Loader from './components/Loader'
 import { CourseModalProvider } from './context/CourseModalContext'
+import { HelmetProvider } from 'react-helmet-async'
 
 library.add(faPlane, faPhone, faChevronLeft, faChevronRight, faCircle, faCheck, faUser, faPaperPlane, faWrench, faXmark)
 
-if(process.env.NODE_ENV === 'production') disableReactDevTools();
+if (process.env.NODE_ENV === 'production') disableReactDevTools();
 
 function App() {
 
 	return (
 		<>
-			<ThemeProvider>
-				<Suspense fallback={<Loader />}>
-					<CourseModalProvider>
-						<RouterProvider router={router} />
-					</CourseModalProvider>
-				</Suspense>
-			</ThemeProvider>
+			<HelmetProvider>
+				<ThemeProvider>
+					<Suspense fallback={<Loader />}>
+						<CourseModalProvider>
+							<RouterProvider router={router} />
+						</CourseModalProvider>
+					</Suspense>
+				</ThemeProvider>
+			</HelmetProvider>
 		</>
 	)
 }
