@@ -1,3 +1,4 @@
+import HelmetSEO from "../components/HelmetSEO"
 import SideMenu from "../components/SideMenu"
 import ContactSection from "../components/ViewSpecificComponents/FlightSchoolView/ContactSection"
 import CoursesSection from "../components/ViewSpecificComponents/FlightSchoolView/CoursesSection"
@@ -10,6 +11,8 @@ import WhyChooseUsSection from "../components/ViewSpecificComponents/FlightSchoo
 function FlightSchoolView() {
 	return (
 		<>
+			<HelmetSEO title='FLIGHT SCHOOL' description='Master the Skies: Our Flight School offers comprehensive pilot training programs tailored to your goals. Learn from industry experts and soar with confidence at VX Aviation.' />
+
 			<SideMenu />
 			<HeroSection />
 			<ImagesSection />
