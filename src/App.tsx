@@ -1,3 +1,4 @@
+import { disableReactDevTools } from '@fvilers/disable-react-devtools'
 import { Suspense } from 'react'
 import { RouterProvider } from 'react-router-dom'
 import { ThemeProvider } from '@material-tailwind/react/context/theme'
@@ -13,6 +14,8 @@ import Loader from './components/Loader'
 import { CourseModalProvider } from './context/CourseModalContext'
 
 library.add(faPlane, faPhone, faChevronLeft, faChevronRight, faCircle, faCheck, faUser, faPaperPlane, faWrench, faXmark)
+
+if(process.env.NODE_ENV === 'production') disableReactDevTools();
 
 function App() {
 
