@@ -19,7 +19,7 @@ function CourseModalTopContent({
 
     return (
         <div className={`${(course.courseImages.length === 2 ) ? "" : "grid grid-cols-12 gap-4"} py-3 px-2`}>
-            <div className={` ${course.courseImages.length > 2 ? "col-span-5" : "col-span-12"}`}>
+            <div className={` ${course.courseImages.length > 2 ? "col-span-10 col-start-2 sm:col-span-5 sm:col-start-1" : "col-span-12"}`}>
 
                 {/* Image displayed when course has ONLY 1 image aside from the cover image */}
                 {course.courseImages.length == 2 && <img src={getImageUrl(`courses/${course.imagesFolder}`, activeImage)} alt={activeImage} className="w-3/5 float-left pr-5" />}
@@ -55,7 +55,7 @@ function CourseModalTopContent({
                     )
                     : (
                         // Content display for courses with MORE THAN 1 image aside from the cover 
-                        <div className={`${(course.bookImage || course.requirements) ? "col-span-7" : "col-span-12"} `}>
+                        <div className={`${(course.bookImage || course.requirements) ? "col-span-12 sm:col-span-7" : "col-span-12"} `}>
                             <h5 className="text-center">Overview</h5>
                             <p className="text-justify text-sm">{course.overview}</p>
                         </div>
