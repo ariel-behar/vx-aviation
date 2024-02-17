@@ -14,7 +14,7 @@ function CourseModalBottomContent({ ...course }: Props) {
             <div className="grid grid-cols-12 py-3 gap-4 px-2">
                 {
                     course.bookImage && (
-                        <div className="px-3 col-span-5">
+                        <div className="px-3 col-span-10 col-start-2 sm:col-span-5 sm:col-start-1">
                             <img key={uniqid()} src={getImageUrl(`courses/${course.imagesFolder}`, course.bookImage)} alt={course.bookImage} loading="lazy" className="w-auto h-full mx-auto" />
                         </div>
                     )
@@ -22,7 +22,8 @@ function CourseModalBottomContent({ ...course }: Props) {
 
                 {
                     course.requirements && (
-                        <div className={`px-3 ${!course.bookImage ? "col-span-12 flex justify-center" : "col-span-7"}`}>
+                        <div className={`px-3 ${!course.bookImage ? "col-span-12 flex flex-col justify-center items-center" : "col-span-12 sm:col-span-7"}`}>
+                            <h5 className="text-center">Requirements</h5>
                             <ul className="list-disc">
                                 {
                                     course.requirements.map((requirement: string) => (
