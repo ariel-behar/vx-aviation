@@ -25,7 +25,7 @@ function HomeView() {
 							initial={{ opacity: 0, y: -100 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.7, delay: 0.5 }}
-							className="mx-auto rounded-2xl p-3 max-w-[350px] md:max-w-full " src={vxAviationLogoWithTitleEffects} alt="VX Aviation Logo with Title" />
+							className="mx-auto rounded-2xl p-3 max-w-[250px] md:max-w-full " src={vxAviationLogoWithTitleEffects} alt="VX Aviation Logo with Title" />
 
 						<motion.div
 							initial={{ opacity: 0, y: 100 }}
