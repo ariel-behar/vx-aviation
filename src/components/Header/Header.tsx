@@ -3,6 +3,7 @@ import Navbar from "@material-tailwind/react/components/Navbar";
 
 import HeaderMenuDesktop from "./HeaderMenuDesktop";
 import HeaderMenuMobile from "./HeaderMenuMobile";
+import useScreenSize from "../../hooks/useScreenSize";
 
 export interface IRoute {
     path: string;
@@ -35,6 +36,7 @@ const routes: IRoute[] = [
 
 export function Header() {
     const [openNav, setOpenNav] = useState(false);
+    const screenSize = useScreenSize();
 
     useEffect(() => {
         window.addEventListener(
@@ -49,18 +51,21 @@ export function Header() {
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
     }
 
-    const openNavHandler = (openNav: boolean) => {
-        setOpenNav(!openNav);
+    const toggleNavHandler = (close?: boolean) => {
+        if(close) {
+            setOpenNav(false)
+        } else {
+            setOpenNav(!openNav);
+        }
     }
 
-
     return (
-        <header className="w-screen shadow-2xl fixed top-0 z-50 bg-tertiary">
+        <header onMouseLeave={(screenSize === "xs" || screenSize === "sm") ? () => toggleNavHandler(true) : undefined} className="w-screen shadow-2xl fixed top-0 z-50 bg-tertiary">
             <Navbar blurred={false} variant="filled" className="border-none top-0 h-max max-w-full rounded-none px-4 lg:px-8 bg-transparent">
                 <div className="lg:container lg:mx-auto lg:px-2">
-                    <HeaderMenuDesktop routes={routes} scrollWithOffset={scrollWithOffset} openNav={openNav} openNavHandler={openNavHandler} />
+                    <HeaderMenuDesktop routes={routes} scrollWithOffset={scrollWithOffset} openNav={openNav} toggleNavHandler={toggleNavHandler}/>
 
-                    <HeaderMenuMobile routes={routes} scrollWithOffset={scrollWithOffset} openNav={openNav} />
+                    <HeaderMenuMobile routes={routes} scrollWithOffset={scrollWithOffset} openNav={openNav} toggleNavHandler={toggleNavHandler}/>
                 </div>
             </Navbar>
         </header>

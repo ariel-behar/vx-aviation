@@ -10,14 +10,14 @@ interface Props {
     routes: IRoute[]
     scrollWithOffset: (el: HTMLElement) => void
     openNav: boolean,
-    openNavHandler: (openNav: boolean) => void
+    toggleNavHandler: (close?: boolean) => void
 }
 
 function HeaderMenuDesktop({
     routes,
     scrollWithOffset,
     openNav,
-    openNavHandler
+    toggleNavHandler
 }: Props) {
     return (
         <div className="flex items-center justify-between">
@@ -26,10 +26,10 @@ function HeaderMenuDesktop({
             </NavLink >
             <div className="flex items-center gap-4">
                 <div className="lg:mr-4 hidden md:block">
-                    <RoutesList routes={routes} scrollWithOffset={scrollWithOffset} />
+                    <RoutesList routes={routes} scrollWithOffset={scrollWithOffset} toggleNavHandler={toggleNavHandler} />
                 </div>
 
-                <HeaderHamburgerIcon openNav={openNav} openNavHandler={openNavHandler} />
+                <HeaderHamburgerIcon openNav={openNav} toggleNavHandler={toggleNavHandler} />
             </div>
         </div>
     )

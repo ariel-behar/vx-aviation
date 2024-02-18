@@ -2,12 +2,12 @@ import IconButton from "@material-tailwind/react/components/IconButton"
 
 interface Props {
     openNav: boolean
-    openNavHandler: (openNav: boolean) => void
+    toggleNavHandler: (close?: boolean) => void
 }
 
 function HeaderHamburgerIcon({
     openNav,
-    openNavHandler
+    toggleNavHandler
 }: Props) {
     return (
         <>
@@ -15,7 +15,7 @@ function HeaderHamburgerIcon({
                 variant="text"
                 className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden"
                 ripple={false}
-                onClick={() => openNavHandler(openNav)}
+                onClick={() => toggleNavHandler()}
             >
                 {openNav ? (
                     <svg
