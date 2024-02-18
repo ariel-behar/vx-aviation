@@ -1,3 +1,3 @@
-const phoneNumber: string = "+1 (111) 222-3334";
+const phoneNumber: string = "+1 (111) *22-333*";
 
 export default phoneNumber;
