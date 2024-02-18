@@ -15,16 +15,16 @@ function TopFooter() {
                     <h5 className='text-white uppercase mb-1 lg:mb-2 text-xl lg:text-lg'>Useful Sites</h5>
                     <ul>
                         <li className='text-primary hover:text-green-600'>
-                            <a href="#https://skyvector.com/" target="_blank">Sky Vector</a>
+                            <a href="https://skyvector.com/" target="_blank">Sky Vector</a>
                         </li>
                         <li className='text-primary hover:text-green-600'>
-                            <a href="#http://www.airnav.com/" target="_blank">Air Nav</a>
+                            <a href="http://www.airnav.com/" target="_blank">Air Nav</a>
                         </li>
                         <li className='text-primary hover:text-green-600'>
                             <a href="http://aviationweather.gov/" target="_blank">Aviation Weather</a>
                         </li>
                         <li className='text-primary hover:text-green-600'>
-                            <a href="#https://www.faa.gov/" target="_blank">Federal Aviation Administration</a>
+                            <a href="https://www.faa.gov/" target="_blank">Federal Aviation Administration</a>
                         </li>
                     </ul>
                 </div>
