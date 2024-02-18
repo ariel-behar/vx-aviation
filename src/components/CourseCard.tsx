@@ -23,6 +23,7 @@ function CourseCard({
         hover:shadow-2xl transition-all ease-in-out border-none">
                 <img
                     className=" w-full  border-none"
+                    onClick={()=>openModalHandler(course)}
                     src={getImageUrl(`courses/${course.imagesFolder}`, course.courseImages[0])}
                     alt="card-image"
                     loading="lazy"

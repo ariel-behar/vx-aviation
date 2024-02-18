@@ -1,6 +1,7 @@
 import uniqid from "uniqid"
 
 import { ICourse } from "./ViewSpecificComponents/FlightSchoolView/CoursesSection"
+import {} from '@material-tailwind/react/components/Carousel/index'
 
 import CourseCard from "./CourseCard"
 
@@ -21,6 +22,8 @@ function CustomCarousel({
 
     return (
         <MuiCarousel
+            loop
+            autoplay
             className="pt-8 pb-12"
             prevArrow={({ handlePrev }) => (
                 <FontAwesomeIcon icon="chevron-left" onClick={handlePrev} className={`absolute top-[10px] left-[10%] sm:left-[45%] md:left-[46%] lg:left-[47%] xl:left-[48%] -translate-x-[50%] ${chevronStyles}`} />
