@@ -22,7 +22,7 @@ function CourseCard({
             <div className="bg-white mt-10 w-full rounded-md flex flex-col overflow-hidden shadow-md
         hover:shadow-2xl transition-all ease-in-out border-none">
                 <img
-                    className=" w-full  border-none"
+                    className=" w-full border-none cursor-pointer"
                     onClick={()=>openModalHandler(course)}
                     src={getImageUrl(`courses/${course.imagesFolder}`, course.courseImages[0])}
                     alt="card-image"
