@@ -15,7 +15,7 @@ function ContactSection() {
 
 	return (
 		<section id="contact-section" style={{ backgroundImage: `url(${airplaneSunset})` }}
-			className='py-5 bg-cover bg-custom-inset-shadow bg-fixed'
+			className='py-5 bg-cover bg-custom-inset-shadow md:bg-fixed'
 		>
 			<div className='lg:w-[82vw] mx-auto grid grid-cols-12 gap-x-3 lg:gap-x-0 gap-y-5 lg:gap-y-0 px-3 lg-px-0'>
 				<div className='col-span-12 md:col-span-4 lg:col-span-5 h-min bg-custom-gradient-opaque p-5 lg:p-9 rounded-xl'>
