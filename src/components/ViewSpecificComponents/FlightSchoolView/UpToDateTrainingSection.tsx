@@ -9,9 +9,15 @@ function UpToDateTrainingSection() {
 	const isInView = useInView(textDivRef, { once: true, amount: 1 })
 
 	return (
-		<section ref={textDivRef} style={{ backgroundImage: `url(${clouds})` }} className='max-h-[220px] lg:min-h-[320px] bg-no-repeat bg-fixed bg-cover bg-bottom grid relative'>
-			<div className='flex justify-end items-end max-h-[220px] lg:min-h-[320px]'>
-				<img src={halfPlaneParked} alt="Flying plane" className="h-3/4" />
+		<section ref={textDivRef} style={{ backgroundImage: `url(${clouds})` }} className='bg-no-repeat bg-fixed bg-cover bg-bottom grid relative overflow-hidden'>
+			<div className='flex justify-end items-end max-h-[200px] lg:max-h-[320px] '>
+				<img
+					style={{
+						transform: isInView ? "none" : "translateX(20%)",
+						opacity: isInView ? 1 : 0,
+						transition: "all 0.8s ease-in-out"
+					}}
+					src={halfPlaneParked} alt="Flying plane" className="h-full" />
 			</div>
 
 			<div className='h-full w-full bg-white/30 absolute'
