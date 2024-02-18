@@ -19,7 +19,7 @@ function HeroSection() {
                     className='text-center'
                 >
                     <h1>WELCOME TO V<sub>x</sub> AVIATION</h1>
-                    <h2 className='mt-5 text-sm'>Flight school lessons all over Tampa Bay</h2>
+                    <h2 className='mt-5 text-md lg:text-3xl'>Flight school lessons all over Tampa Bay</h2>
 
                     <ScrollLink className='cursor-pointer' to="who-we-are-section" smooth={true} offset={-100} duration={100}>
                         <Button size={isXsSm ? 'md' : 'lg'} className='uppercase bg-primary rounded-md mt-10 font-thin'>Begin tour</Button>
