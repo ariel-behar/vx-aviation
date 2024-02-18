@@ -24,7 +24,7 @@ const servicesList: Service[] = [
 function MaintenanceServicesView() {
 	return (
 		<>
-			<HelmetSEO title='SERVICES' description='Elevate Your Aircraft: Explore our Maintenance and Services page for top-notch aircraft care. Trust VX Aviation for meticulous maintenance, repairs, and unparalleled service excellence.' />
+			<HelmetSEO title='MAINTENANCE & SERVICES' description='Elevate Your Aircraft: Explore our Maintenance and Services page for top-notch aircraft care. Trust VX Aviation for meticulous maintenance, repairs, and unparalleled service excellence.' />
 
 			<div className="mt-[5vh] h-[35vh] xl:h-[55vh] bg-no-repeat bg-cover bg-fixed relative" style={{ backgroundImage: `url(${airplaneRepair})` }}>
 				<div className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center'>
