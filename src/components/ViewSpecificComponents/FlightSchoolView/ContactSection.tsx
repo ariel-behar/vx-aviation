@@ -1,8 +1,18 @@
+import { useState } from 'react'
+
 import airplaneSunset from '../../../assets/img/airplane-sunset.jpg'
 import ContactForm from '../../ContactForm'
 import PhoneNumber from '../../PhoneNumber'
+import SuccessfullSubmission from '../../SuccessfullSubmission'
 
 function ContactSection() {
+	const [submissionSuccess, setSubmissionSuccess] = useState<boolean>(false)
+
+	const handleSubmissionSuccess = () => {
+		setSubmissionSuccess(!submissionSuccess)
+	}
+
+
 	return (
 		<section id="contact-section" style={{ backgroundImage: `url(${airplaneSunset})` }}
 			className='py-5 bg-cover bg-custom-inset-shadow bg-fixed'
@@ -17,10 +27,16 @@ function ContactSection() {
 					<p className='text-center text-2xl mt-5'>OR</p>
 				</div>
 				<section className='col-span-12 md:col-span-8 lg:col-span-6 bg-custom-gradient-opaque rounded-xl p-5 lg:p-9'>
-					<h3 className='text-center uppercase'>Leave us your details</h3>
-					<p className='text-justify my-5'>We will contact you with detailed information about the program of your choice at a more convenient time for you</p>
+					{
+						submissionSuccess
+							? <SuccessfullSubmission />
+							: <>
+								<h3 className='text-center uppercase'>Leave us your details</h3>
+								<p className='text-justify my-5'>We will contact you with detailed information about the program of your choice at a convenient time for you!</p>
 
-					<ContactForm />
+								<ContactForm handleSubmissionSuccess={handleSubmissionSuccess} />
+							</>
+					}
 				</section>
 			</div>
 		</section>
