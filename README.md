@@ -10,7 +10,7 @@
 <br />
 
 <p align="center">
-    <img style="height: 350px; width: auto" alt="Baby Journal" src="https://github-repositories-images.s3.eu-central-1.amazonaws.com/vx-aviation.png">
+    <img style="height: 350px; width: auto" alt="VX Aviation" src="https://github-repositories-images.s3.eu-central-1.amazonaws.com/vx-aviation.png">
 </p>
 
 <br />
